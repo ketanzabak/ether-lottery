@@ -35,6 +35,14 @@ To get started with the Ethereum Lottery DApp, follow these steps:
     </li>
 </ul>
 
+## Deploy Smart Contract on Test Network
+<ul>
+    <li>Create .env file in the root folder where truffle-config.js file is present</li>
+    <li> Add MNEMONIC, PROJECT_ID & API_SECRET in .env file. Mnemonic is the twelve word phrase the wallet uses to generate public/private key pairs. PROJECT_ID & API_SECRET are configured from Infura's project setup.
+    </li>
+    <li>Run command : truffle migrate --network sepolia </li> 
+</ul>
+
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 

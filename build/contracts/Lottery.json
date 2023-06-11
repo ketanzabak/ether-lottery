@@ -17,7 +17,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -36,14 +37,16 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "enter",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
@@ -63,7 +66,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"enter\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getPlayers\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"manager\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pickWinner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"players\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getPlayers()\":{\"returns\":{\"_0\":\"An array of player addresses.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"enter()\":{\"notice\":\"Allows a player to enter the lottery by sending a minimum amount of ether. Minimum amout of ether to enter is 0.01 \"},\"getPlayers()\":{\"notice\":\"Retrieves the list of players who have entered the lottery.\"},\"pickWinner()\":{\"notice\":\"Picks a random winner among the registered players and transfers the contract balance to their address. Can only be called by the contract manager.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Lottery.sol\":\"Lottery\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Lottery.sol\":{\"keccak256\":\"0x03e2ae2f846f3926b82cf8f83691aa18847f6120f35612d93ff4dd261b407d2b\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://6cd155336756cea3f549e32c0a7b434157cbe49fc08e21c80af848cf72b8a7a6\",\"dweb:/ipfs/QmWoMJo5qJUPE5FwBnXxbDEWLGKQTH2KD775sH3hZaHETr\"]}},\"version\":1}",
@@ -5045,9 +5049,17 @@
     "name": "solc",
     "version": "0.8.20+commit.a1b79de6.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "11155111": {
+      "events": {},
+      "links": {},
+      "address": "0x9Eac26529c89F59ed0f134726ddb316E812a0819",
+      "transactionHash": "0x1f637d27301d3e0aa3ddcd6aa03e9fb08afda4474daac5bd260cee36aa62b9aa"
+    }
+  },
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-06-08T14:04:56.499Z",
+  "updatedAt": "2023-06-11T03:54:24.558Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {
