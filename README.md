@@ -43,6 +43,13 @@ To get started with the Ethereum Lottery DApp, follow these steps:
     <li>Run command : truffle migrate --network sepolia </li> 
 </ul>
 
+## Start server
+<ul>
+    <li>Change directory to client</li>
+    <li>Run command: npm start </li>
+    <li>Go to browser and hit url : http://localhost:3000 </li>
+</ul>
+
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of the license.
 
